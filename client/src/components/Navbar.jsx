@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Phone, Search, User, ShoppingCart, Bell } from 'lucide-react';
+import { Phone, Search, User, ShoppingCart, Bell, ShoppingBag } from 'lucide-react';
 import bgnavimg from '../assets/navbarbg.png'
 
 export default function Navbar() {
   const [activeTab, setActiveTab] = useState('Shop');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-50">
+    <div className="min-h-[10rem] bg-gradient-to-br from-green-50 via-white to-green-50 ">
       {/* Top Banner */}
       <div className="bg-gray-800 text-white px-4 py-2 text-center text-sm">
         <span className="mr-4">Your first 5 minutes instant call is free.</span>
@@ -110,24 +110,23 @@ export default function Navbar() {
           <h2 className="text-4xl font-bold text-gray-800 mb-8">Store</h2>
           
           {/* Search Bar */}
-          <div className="max-w-md mx-auto relative flex justify-center items-center">
+          <div className="flex justify-center items-center gap-4 ">
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-4 text-gray-400" />
               <input
                 type="text"
                 placeholder="Search for Kuntal Care"
-                className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent shadow-sm bg-white"
+                className="w-[30rem] h-12 pl-10 pr-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent shadow-sm bg-white"
               />
             </div>
-            <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-700 text-white p-2 rounded-md transition-colors">
-              <Search className="w-4 h-4" />
+            <button className=" bg-white hover:bg-green-700 text-black p-2 rounded-md transition-colors hover:cursor-pointer">
+              <ShoppingBag className="w-7 h-6" />
+
             </button>
           </div>
           
           {/* Search Button */}
-          {/* <button className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition-colors shadow-md">
-            🔍
-          </button> */}
+      
         </div>
       </div>
 

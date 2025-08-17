@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import StoreSection from './components/StoreSection';
+import Footer from './components/Footer';
 
 function App() {
   const [activeTab, setActiveTab] = useState('Shop');
@@ -12,9 +13,10 @@ function App() {
 
 
 
-    <div className="min-h-screen">
+    <div className="min-h-screen" >
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
       <StoreSection/>
+      <Footer />
     </div>
   );
 }
