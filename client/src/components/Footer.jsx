@@ -5,98 +5,98 @@ const Footer = () => {
     <div>
 
     
-    <section className="bg-[#f7f5f0] min-h-screen flex items-center justify-center p-20 max-w-screen overflow-hidden">
-      <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-[#f7f5f0] min-h-screen flex items-center justify-center p-4 sm:p-8 md:p-12 lg:p-20 max-w-screen overflow-hidden">
+      <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         
         {/* Left Content */}
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {/* Main Heading */}
           <div>
-            <h1 className="text-4xl font-bold text-[#4a5d3a] leading-tight mb-6">
-              Download Amrutam Ayurveda<br />
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4a5d3a] leading-tight mb-4 md:mb-6">
+              Download Amrutam Ayurveda<br className="hidden sm:block" />
               App Now
             </h1>
-            <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-md">
               The Amrutam Ayurveda App is your one-stop app for all things Ayurveda! Apart from mimicking the website, the app has added benefits
             </p>
           </div>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
             {/* Feature 1 */}
-            <div className="flex items-center space-x-4 bg-white rounded-2xl p-4 border border-gray-200 ">
-              <div className="bg-gray-100 rounded-full p-3 flex-shrink-0">
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center space-x-3 sm:space-x-4 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-gray-200">
+              <div className="bg-gray-100 rounded-full p-2 sm:p-3 flex-shrink-0">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 text-sm">Access To</h3>
-                <p className="text-gray-600 text-sm">Prescriptions</p>
+                <h3 className="font-semibold text-gray-800 text-xs sm:text-sm">Access To</h3>
+                <p className="text-gray-600 text-xs sm:text-sm">Prescriptions</p>
               </div>
             </div>
 
             {/* Feature 2 */}
-            <div className="flex items-center space-x-4 bg-white rounded-2xl p-4 border border-gray-200">
-              <div className="bg-gray-100 rounded-full p-3 flex-shrink-0">
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center space-x-3 sm:space-x-4 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-gray-200">
+              <div className="bg-gray-100 rounded-full p-2 sm:p-3 flex-shrink-0">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 text-sm">Track Health</h3>
-                <p className="text-gray-600 text-sm">Efficiently</p>
+                <h3 className="font-semibold text-gray-800 text-xs sm:text-sm">Track Health</h3>
+                <p className="text-gray-600 text-xs sm:text-sm">Efficiently</p>
               </div>
             </div>
 
             {/* Feature 3 */}
-            <div className="flex items-center space-x-4 bg-white rounded-2xl p-4 border border-gray-200">
-              <div className="bg-gray-100 rounded-full p-3 flex-shrink-0">
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center space-x-3 sm:space-x-4 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-gray-200">
+              <div className="bg-gray-100 rounded-full p-2 sm:p-3 flex-shrink-0">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 text-sm">Direct Chat With</h3>
-                <p className="text-gray-600 text-sm">Doctors</p>
+                <h3 className="font-semibold text-gray-800 text-xs sm:text-sm">Direct Chat With</h3>
+                <p className="text-gray-600 text-xs sm:text-sm">Doctors</p>
               </div>
             </div>
 
             {/* Feature 4 */}
-            <div className="flex items-center space-x-4 bg-white rounded-2xl p-4 border border-gray-200">
-              <div className="bg-gray-100 rounded-full p-3 flex-shrink-0">
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center space-x-3 sm:space-x-4 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-gray-200">
+              <div className="bg-gray-100 rounded-full p-2 sm:p-3 flex-shrink-0">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-5 5v-5zM4.828 4.828A4 4 0 015.5 4H9v1H5.5a3 3 0 00-2.121.879l-.707.707A3 3 0 002 8.5V12H1V8.5a4 4 0 011.172-2.828z" />
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 text-sm">In-App Reminders</h3>
-                <p className="text-gray-600 text-sm">For Consultations</p>
+                <h3 className="font-semibold text-gray-800 text-xs sm:text-sm">In-App Reminders</h3>
+                <p className="text-gray-600 text-xs sm:text-sm">For Consultations</p>
               </div>
             </div>
           </div>
 
           {/* Download Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
             {/* Google Play Button */}
-            <div className="bg-black rounded-xl px-6 py-3 flex items-center space-x-3 cursor-pointer hover:bg-gray-800 transition-colors">
-              <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <div className="bg-black rounded-lg sm:rounded-xl px-4 sm:px-6 py-2.5 sm:py-3 flex items-center space-x-2 sm:space-x-3 cursor-pointer hover:bg-gray-800 transition-colors">
+              <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
               </svg>
               <div className="text-white">
                 <div className="text-xs font-medium">GET IT ON</div>
-                <div className="text-lg font-bold">Google Play</div>
+                <div className="text-base sm:text-lg font-bold">Google Play</div>
               </div>
             </div>
             
             {/* App Store Button */}
-            <div className="bg-black rounded-xl px-6 py-3 flex items-center space-x-3 cursor-pointer hover:bg-gray-800 transition-colors">
-              <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <div className="bg-black rounded-lg sm:rounded-xl px-4 sm:px-6 py-2.5 sm:py-3 flex items-center space-x-2 sm:space-x-3 cursor-pointer hover:bg-gray-800 transition-colors">
+              <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.19 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
               </svg>
               <div className="text-white">
                 <div className="text-xs font-medium">Download on the</div>
-                <div className="text-lg font-bold">App Store</div>
+                <div className="text-base sm:text-lg font-bold">App Store</div>
               </div>
             </div>
           </div>

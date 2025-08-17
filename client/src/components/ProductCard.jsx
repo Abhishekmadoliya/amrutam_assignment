@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plus, Star } from 'lucide-react';
+import {  useNavigate } from 'react-router-dom';
 
 // interface Product {
 //   id: string;
@@ -17,24 +18,29 @@ import { Plus, Star } from 'lucide-react';
 // }
 
 export default function ProductCard({ product }) {
+  const navigate = useNavigate(); // Use useNavigate from react-router-dom
+  const handleProductCardClick = () => {
+
+    navigate(`/product/${product.id}`);
+  };
+
   return (
-    <div>
-      <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group ]">
+    <div onClick={handleProductCardClick}>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
         <div className="relative overflow-hidden">
           <img
             src={product.image}
             alt={product.name}
-          className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-        {product.isOnSale && (
-          <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
-            Sale
-          </div>
-        )}
+            className="w-full h-48 sm:h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+          {product.isOnSale && (
+            <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
+              Sale
+            </div>
+          )}
+        </div>
       </div>
-      
-    </div>
-      <div className="flex flex-col h-full items-center p-5 text-sm text-black ">
+      <div className="flex flex-col h-full items-center p-3 sm:p-4 md:p-5 text-xs sm:text-sm text-black">
         <h3 className="font-medium text-gray-800 mb-2 line-clamp-2 leading-tight text-center">
           {product.name}
         </h3>
